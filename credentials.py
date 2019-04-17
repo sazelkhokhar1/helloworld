@@ -17,8 +17,8 @@ val = ('1','abc')
 SQL1 = "SELECT * FROM sys.customers"
 cursor = mydb.cursor()
 #cursor.execute(SQL1)
-cursor.execute(SQL3,val)
-mydb.commit()
-#records = cursor.fetchall()
-
+cursor.execute(SQL1)
+#mydb.commit()
+records = cursor.fetchall()
+print(records)
 
